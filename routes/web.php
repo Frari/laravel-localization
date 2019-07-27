@@ -10,7 +10,14 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::group([
+  'middleware' => [ 'localize' ], // Route translate middleware
+  'prefix' => LaravelLocalization::setLocale()],
+  function(){
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+Route::get(LaravelLocalization::transRoute('routes.about'), function () {
+    return view('about');
+});
 });
