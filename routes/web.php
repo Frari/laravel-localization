@@ -16,8 +16,8 @@ Route::group([
   function(){
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 Route::get(LaravelLocalization::transRoute('routes.about'), function () {
     return view('about');
-});
+})->name('about');
 });

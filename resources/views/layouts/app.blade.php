@@ -32,7 +32,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link disabled" href="{{route('about')}}" tabindex="-1" aria-disabled="true">@lang('general.but_about')</a>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">

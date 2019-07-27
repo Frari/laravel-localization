@@ -2,5 +2,6 @@
 
 return [
   'welcome' => 'welcome',
-  'about' => 'about us'
+  'about' => 'about us',
+  'but_about'=> 'about us'
 ];
